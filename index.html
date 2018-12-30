@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Free Code Camp Technical Documentation Project">
+    <title>FCC CSS Technical Documentation</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>CSS Syntax</header>
+        <a href="#introduction_to_css_syntax" class="nav-link">Introduction to CSS Syntax</a>
+        <a href="#css_selectors" class="nav-link">CSS Selectors</a>
+        <a href="#css_declaration_block" class="nav-link">CSS Declaration Block</a>
+        <a href="#css_use" class="nav-link">CSS Use</a>
+        <a href="#css_specificity" class="nav-link">CSS Specificity</a>
+        <a href="#css_inheritance" class="nav-link">CSS Inheritance</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction_to_css_syntax">
+            <header>Introduction to CSS Syntax</header>
+            <article>
+                <p><i>This content is borrowed from <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets" rel="noopener" target="_blank">Wikipedia</a> and is being used here for demonstration purposes only.</i></p>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                <p>CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation
+                    characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.</p>
+                <p>The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.</p>
+
+                <p>We will focus on the following CSS Syntax:</p>
+                <ul>
+                    <li>Selectors</li>
+                    <li>Declaration Blocks</li>
+                    <li>Use</li>
+                    <li>Specificity</li>
+                    <li>Inheritance</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="css_selectors">
+            <header>CSS Selectors</header>
+            <article>
+                <p>In CSS, selectors declare which part of the markup a style applies to by matching tags and attributes in the markup itself.</p>
+                <p>Selectors may apply to the following:</p>
+                <ul>
+                    <li>all elements of a specific type, e.g. the second-level headers h2</li>
+                    <li>elements specified by attribute, in particular:
+                        <ul>
+                            <li><strong>id</strong>: an identifier unique within the document</li>
+                            <li><strong>class</strong>: an identifier that can annotate multiple elements in a document</li>
+                        </ul>
+                    </li>
+                    <li>elements depending on how they are placed relative to others in the document tree.</li>
+                </ul>
+                <p>Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, hyphens and underscores. A class may apply to any number of instances of any elements. An ID may only be applied to a single element.
+                </p>
+                <p>Pseudo-classes are used in CSS selectors to permit formatting based on information that is not contained in the document tree. One example of a widely used pseudo-class is <code>:hover</code>, which identifies content only when the user
+                    “points to” the visible element, usually by holding the mouse cursor over it. It is appended to a selector as in a:hover or <code>#elementid:hover</code>. A pseudo-class classifies document elements, such as <code>:link</code> or
+                    <code>:visited</code>, whereas a pseudo-element makes a selection that may consist of partial elements, such as <code>::first-line</code> or <code>::first-letter</code>.</p>
+            </article>
+        </section>
+        <section class="main-section" id="css_declaration_block">
+            <header>CSS Declaration Block</header>
+            <article>
+                <p>A declaration block consists of a list of declarations in braces. Each declaration itself consists of a property, a colon (<code>:</code>), and a value. If there are multiple declarations in a block, a semi-colon (<code>;</code>) must
+                    be inserted to separate each declaration.</p>
+                <p>Properties are specified in the CSS standard. Each property has a set of possible values. Some properties can affect any type of element, and others apply only to particular groups of elements.</p>
+                <p>Values may be keywords, such as "center" or "inherit", or numerical values, such as 200px (200 pixels), 50vw (50 percent of the viewport width) or 80% (80 percent of the window width). Color values can be specified with keywords (e.g.
+                    "red"), hexadecimal values (e.g. <code>#FF0000</code>, also abbreviated as <code>#F00</code>), RGB values on a 0 to 255 scale (e.g. <code>rgb(255, 0, 0)</code>), RGBA values that specify both color and alpha transparency <code>(e.g. rgba(255, 0, 0, 0.8)</code>),
+                    or HSL or HSLA values (e.g. <code>hsl(000, 100%, 50%)</code>, <code>hsla(000, 100%, 50%, 80%)</code>).</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="css_use">
+            <header>CSS Use</header>
+            <article>
+                <p>Before CSS, nearly all presentational attributes of HTML documents were contained within the HTML markup. All font colors, background styles, element alignments, borders and sizes had to be explicitly described, often repeatedly, within
+                    the HTML. CSS lets authors move much of that information to another file, the style sheet, resulting in considerably simpler HTML.</p>
+                <p>For example, headings (h1 elements), sub-headings (h2), sub-sub-headings (h3), etc., are defined structurally using HTML. In print and on the screen, choice of font, size, color and emphasis for these elements is presentational. </p>
+                <p>Before CSS, document authors who wanted to assign such typographic characteristics to, say, all h2 headings had to repeat HTML presentational markup for each occurrence of that heading type. This made documents more complex, larger, and
+                    more error-prone and difficult to maintain. CSS allows the separation of presentation from structure. CSS can define color, font, text alignment, size, borders, spacing, layout and many other typographic characteristics, and can do
+                    so independently for on-screen and printed views. CSS also defines non-visual styles, such as reading speed and emphasis for aural text readers. The W3C has now deprecated the use of all presentational HTML markup.[12] </p>
+                <p>For example, under pre-CSS HTML, a heading element defined with red text would be written as:</p>
+                <code class="block">
+                    &lt;h1&gt;&lt;font color="red"&gt; Chapter 1.&lt;/font&gt;&lt;/h1&gt;
+                </code>
+                <p>Using CSS, the same element can be coded using style properties instead of HTML presentational attributes:</p>
+                <code class="block">
+                    &lt;h1 style="color: red;"&gt; Chapter 1.&lt;/h1&gt;
+                </code>
+            </article>
+        </section>
+
+        <section class="main-section" id="css_specificity">
+            <header>CSS Specificity</header>
+            <article>
+                <p>Specificity refers to the relative weights of various rules. It determines which styles apply to an element when more than one rule could apply. Based on specification, a simple selector (e.g. H1) has a specificity of 1, class selectors
+                    have a specificity of 1,0, and ID selectors a specificity of 1,0,0. Because the specificity values do not carry over as in the decimal system, commas are used to separate the "digits" (a CSS rule having 11 elements and 11 classes would
+                    have a specificity of 11,11, not 121).</p>
+                <p>Thus the following rules selectors result in the indicated specificity (lowest to highest):</p>
+                <ul>
+                    <li><code>h1 {color: white;}</code> - 0, 0, 0, 1</li>
+                    <li><code>P EM {color: green;}</code> - 0, 0, 0, 2</li>
+                    <li><code>.grape {color: red;}</code> - 0, 0, 1, 0</li>
+                    <li><code>P.bright {color: blue;}	</code> - 0, 0, 1, 1</li>
+                    <li><code>P.bright EM.dark {color: yellow;}</code> - 0, 0, 2, 2</li>
+                    <li><code>#id218 {color: brown;}</code> - 0, 1, 0, 0</li>
+                    <li><code>style=" "</code> - 1, 0, 0, 0</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="css_inheritance">
+            <header>CSS Inheritance</header>
+            <article>
+                <p>Inheritance is a key feature in CSS; it relies on the ancestor-descendant relationship to operate. Inheritance is the mechanism by which properties are applied not only to a specified element, but also to its descendants. Inheritance relies
+                    on the document tree, which is the hierarchy of XHTML elements in a page based on nesting. Descendant elements may inherit CSS property values from any ancestor element enclosing them. In general, descendant elements inherit text-related
+                    properties, but they are box-related properties are not inherited. Properties that can be inherited are color, font, letter-spacing, line-height, list-style, text-align, text-indent, text-transform, visibility, white-space and word-spacing.
+                    Properties that cannot be inherited are background, border, display, float and clear, height, and width, margin, min- and max-height and -width, outline, overflow, padding, position, text-decoration, vertical-align and z-index.</p>
+                <p>Inheritance can be used to avoid declaring certain properties over and over again in a style sheet, allowing for shorter CSS.</p>
+                <p>Inheritance in CSS is not the same as inheritance in class-based programming languages, where it is possible to define class B as "like class A, but with modifications". With CSS, it is possible to style an element with "class A, but with
+                    modifications". However, it is not possible to define a CSS class B like that, which could then be used to style multiple elements without having to repeat the modifications.</p>
+                <p>Given the following style sheet:</p>
+                <code class="block">
+                    h1 {<br>
+                    &nbsp;&nbsp;color: pink;
+                    }
+                </code>
+                <p>Suppose there is an h1 element with an emphasizing element (em) inside:</p>
+                <code class="block">
+                    &lt;h1&gt;
+                    &nbsp;&nbsp;This is to &lt;em&gt;illustrate&lt;/em&gt; inheritance
+                    &lt;/h1&gt;
+                </code>
+                <p>If no color is assigned to the em element, the emphasized word "illustrate" inherits the color of the parent element, h1. The style sheet h1 has the color pink, hence, the em element is likewise pink.</p>
+            </article>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
