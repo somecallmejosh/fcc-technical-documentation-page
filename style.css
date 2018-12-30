@@ -33,7 +33,8 @@ nav a {
 }
 
 a {
-    color: mediumblue text-decoration: none;
+    color: mediumblue;
+    text-decoration: none;
 }
 
 a:hover {
