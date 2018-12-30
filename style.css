@@ -33,12 +33,11 @@ nav a {
 }
 
 a {
-    color: cornflowerblue;
-    text-decoration: none;
+    color: mediumblue text-decoration: none;
 }
 
 a:hover {
-    color: darkslateblue;
+    color: blue;
     text-decoration: underline;
 }
 
